@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <title>Little Maths</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary ">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="index.html">Little Maths</a>
+        <button class="navbar-toggler " style="border-color: whitesmoke; background-color: aliceblue;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="border-color: whitesmoke;"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"><i class="fa-solid fa-ranking-star"></i> Ranking (Coming Soon!)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 col-md-9 mt-4">
+          <div class="bg-white container_number_sample_display">
+            <div class="row justify-content-center ">
+              <div id="sample_first_number" class="col-2 mx-auto text-center display-1">
+                1
+              </div>
+              <div id="sample_calculator" class="col-2 mx-auto display-1 text-center">
+                +
+              </div>
+              <div id="sample_second_number" class="col-2 mx-auto display-1 text-center">
+                1
+              </div>
+              <div class="col-2 mx-auto display-1 text-center">
+                =
+              </div>
+              <div class="col-2 mx-auto display-1 text-center">
+                ?
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="bg-white container_input_setting">
+            <br>
+            <div class="row mb-1 justify-content-center">
+              <div class="title_row text-center mb-2">Nickname</div>
+              <div class="col-8 text-center">
+                <input id="input_nickname" class="form-control" type="text" placeholder="Please Input Nickname Here~" style="text-align: center; ">
+              </div>
+              <div id="nickname_warning_block" class="col-8 text-center" style="color: red">
+                
+              </div>
+            </div>
+      
+            <div class="row mt-5 justify-content-center">
+              <div class="title_row text-center mb-2">First Number</div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_first_num_setting" type="radio" id="first_num_first_digit" name="digit1" value="1" checked>
+                <label class="input_box" for="first_num_first_digit"><i class="fa-solid fa-1 fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_first_num_setting" type="radio" id="first_num_second_digit" name="digit1" value="2">
+                <label class="input_box" for="first_num_second_digit"><i class="fa-solid fa-2 fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_first_num_setting" type="radio" id="first_num_third_digit" name="digit1" value="3">
+                <label class="input_box" for="first_num_third_digit"><i class="fa-solid fa-3 fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+              <input class="input_first_num_setting" type="radio" id="first_num_fourth_digit" name="digit1" value="4">
+              <label class="input_box" for="first_num_fourth_digit"><i class="fa-solid fa-4 fa-1x"></i></label>
+              </div>
+            </div>
+      
+            <div class="row mt-3 justify-content-center">
+              <div class="title_row text-center mb-2">Second Number</div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_second_num_setting" type="radio" id="second_num_first_digit" name="digit2" value="1" checked>
+                <label class="input_box" for="second_num_first_digit"><i class="fa-solid fa-1 fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_second_num_setting" type="radio" id="second_num_second_digit" name="digit2" value="2">
+                <label class="input_box" for="second_num_second_digit"><i class="fa-solid fa-2 fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_second_num_setting" type="radio" id="second_num_third_digit" name="digit2" value="3">
+                <label class="input_box" for="second_num_third_digit"><i class="fa-solid fa-3 fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_second_num_setting" type="radio" id="second_num_fourth_digit" name="digit2" value="4">
+                <label class="input_box" for="second_num_fourth_digit"><i class="fa-solid fa-4 fa-1x"></i></label>
+              </div>
+            </div>
+            <div class="row mt-3 justify-content-center">
+              <div class="title_row text-center mb-2">Calculator</div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_calculator_setting" type="radio" id="add_number" name="caculation" value="+" checked>
+                <label class="input_box" for="add_number"><i class="fa-solid fa-plus fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_calculator_setting" type="radio" id="minus_number" name="caculation" value="-">
+                <label class="input_box" for="minus_number"><i class="fa-solid fa-minus fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_calculator_setting" type="radio" id="multiply_number" name="caculation" value="x">
+                <label class="input_box" for="multiply_number"><i class="fa-solid fa-xmark fa-1x"></i></label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 p-2">
+                <input class="input_calculator_setting" type="radio" id="divided_number" name="caculation" value="/">
+                <label class="input_box" for="divided_number"><i class="fa-solid fa-divide fa-1x"></i></label>
+              </div>
+            </div>
+            <div class="row mt-3 justify-content-center">
+              <div class="title_row text-center mb-2">Timer</div>
+              <!-- <div class="title_row text-center mb-2">
+                <button id="input_time_limit_button" type="button" class="btn btn-primary btn-lg"> Time Limit</button>
+                <button id="input_time_count_button" type="button" class="btn btn-warning btn-lg"> Time Count </button>
+              </div>
+               -->
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 input_time_selection p-2">
+                <input type="radio" id="time_for_10s" name="seconds" value="10" checked>
+                <label class="input_box" for="time_for_10s">10s</label>
+              </div>
+      
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 input_time_selection p-2">
+                <input type="radio" id="time_for_20s" name="seconds" value="20">
+                <label class="input_box" for="time_for_20s">20s</label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 input_time_selection p-2">
+                <input type="radio" id="time_for_30s" name="seconds" value="30">
+                <label class="input_box" for="time_for_30s">30s</label>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2 input_time_selection p-2">
+                <input type="radio" id="time_for_60s" name="seconds" value="60">
+                <label class="input_box" for="time_for_60s">60s</label>
+              </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+              <div class="col-6 col-md-3 col-lg-2 text-center mb-2">
+                <button id="start_button" type="button" class="btn btn-lg"> Start! </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mt-4 bg-white container_show_history_box">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center m-3">
+              <h4>History</h4>
+            </div>
+            <div class="col-12 text-center m-3 table-responsive">
+              <table class="table" style="width: 100%;">
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Result</th>
+                  </tr>
+                </thead>
+                <tbody id="user_history_table_body">
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+
+            <div id="history_loader" class="col-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container ">
+      <footer class="py-3 my-4 border-top">
+        <p class="text-center text-muted">leceatsang@gmail.com</p>
+      </footer>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/8a58214f1c.js" crossorigin="anonymous"></script>
+    <script src="assets/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
